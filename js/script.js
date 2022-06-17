@@ -43,23 +43,25 @@ const teamArrey = [
 
 const classesContainer = document.querySelector('.team-container');
 
-// stampo una card (appendo single-class template a team-container)
+// creo card tante quante è la lunghezza del arrey che contiene gli object
 for(let i = 0; i < teamArrey.length; i++) {
     const thisMember = teamArrey[i];
     console.log(thisMember);
 
-    const classToDraw = `<div class="team-card">
-    <div class="card-image">
-      <img
-        src="img/${thisMember.image}"
-        alt="${thisMember.name}"
-      />
+    const classToDraw = `
+    <div class="team-card">
+        <div class="card-image">
+            <img
+                src="img/${thisMember.image}"
+                alt="${thisMember.name}"
+            />
+        </div>
+
+        <div class="card-text">
+            <h3>${thisMember.name}</h3>
+            <p>${thisMember.role}</p>
+        </div>
     </div>
-    <div class="card-text">
-      <h3>${thisMember.name}</h3>
-      <p>${thisMember.role}</p>
-    </div>
-  </div>
    `;
 
     // concatenarlo a classesContainer

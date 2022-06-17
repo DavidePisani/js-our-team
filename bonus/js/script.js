@@ -42,20 +42,14 @@ const teamArrey = [
     },
 ];
 
-// funzione
+// funzione per aggiungere un nuovo elemento nell'arrey
 const addBtn = document.getElementById("addMemberButton");
 addBtn.addEventListener('click', addMember);
-console.log(addBtn)
 
 function addMember(){
     const nameUser = document.getElementById('name').value
     const roleUser = document.getElementById('role').value
     const imgUser = document.getElementById('image').value
-
-    console.log(nameUser)
-    console.log(roleUser)
-    console.log(imgUser)
-
 
     const newMember = {
         name: nameUser,
@@ -63,32 +57,24 @@ function addMember(){
         image: imgUser,
     };
 
-    teamArrey.push(newMember)
-    console.log(teamArrey)
-    
+    // richiamo la funzione per stampare la card del nuovo membro
     drawSingleTeamElement(newMember)
 }
 
-
+// funzione per scorrere tuti gli elementi dell'arrey
 drawAllTeams(teamArrey)
-
 function drawAllTeams(teamsObjectsArray) {
-        // Per ogni elemento dell'array 
-        // crea una card e la stampa
         for(let i = 0; i < teamsObjectsArray.length; i++) {
             const thisClass = teamsObjectsArray[i];
-            // Chiama un'altra funzione che crea la card
-            // e l'appende al classes-container
+            // richiamo la funzione per stampare in pagina
             drawSingleTeamElement(thisClass);
         }
     }
 
-
+    // funzione per creare la card e stamparla in pagina 
     function drawSingleTeamElement(teamObject) {
-            // Crea una card e la append a classes-container
-            const classesContainer = document.querySelector('.team-container');
-        
-            const classToDraw = `
+            const teamsContainer = document.querySelector('.team-container');
+            const teamToDraw = `
             <div class="team-card">
                 <div class="card-image">
                     <img
@@ -103,7 +89,5 @@ function drawAllTeams(teamsObjectsArray) {
                 </div>
             </div>
            `;
-        
-            // concatenarlo a classesContainer
-            classesContainer.innerHTML += classToDraw;
+            teamsContainer.innerHTML += teamToDraw;
         }

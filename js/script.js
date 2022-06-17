@@ -46,8 +46,7 @@ const classesContainer = document.querySelector('.team-container');
 // creo card tante quante è la lunghezza del arrey che contiene gli object
 for(let i = 0; i < teamArrey.length; i++) {
     const thisMember = teamArrey[i];
-    console.log(thisMember);
-
+    
     const classToDraw = `
     <div class="team-card">
         <div class="card-image">

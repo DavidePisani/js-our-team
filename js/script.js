@@ -19,22 +19,22 @@ const teamArrey = [
     },
     {
         name:'Angela Lopez',
-        role: 'Founder & CEO',
+        role: 'Social Media Menager',
         image: 'angela-lopez-social-media-manager.jpg',
     },
     {
         name:'Scott Estrada',
-        role: 'Founder & CEO',
+        role: 'Developer',
         image: 'scott-estrada-developer.jpg',
     },
     {
         name:'Walter Gordon',
-        role: 'Founder & CEO',
+        role: 'Office Managere',
         image: 'walter-gordon-office-manager.jpg',
     },
     {
         name:'Barbara Ramos',
-        role: 'Founder & CEO',
+        role: 'Graphic Designer',
         image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];

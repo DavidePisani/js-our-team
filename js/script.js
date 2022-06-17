@@ -10,32 +10,32 @@ const teamArrey = [
     {
         name:'Wayne Barnett',
         role: 'Founder & CEO',
-        image: 'wayne-barnett-founder-ceo.jpg',
+        image: 'img/wayne-barnett-founder-ceo.jpg',
     },
     {
         name:'Angela Caroll',
         role: 'Chief Editor',
-        image: 'angela-caroll-chief-editor.jpg',
+        image: 'img/angela-caroll-chief-editor.jpg',
     },
     {
         name:'Angela Lopez',
         role: 'Social Media Menager',
-        image: 'angela-lopez-social-media-manager.jpg',
+        image: 'img/angela-lopez-social-media-manager.jpg',
     },
     {
         name:'Scott Estrada',
         role: 'Developer',
-        image: 'scott-estrada-developer.jpg',
+        image: 'img/scott-estrada-developer.jpg',
     },
     {
         name:'Walter Gordon',
-        role: 'Office Managere',
-        image: 'walter-gordon-office-manager.jpg',
+        role: 'Office Manager',
+        image: 'img/walter-gordon-office-manager.jpg',
     },
     {
         name:'Barbara Ramos',
         role: 'Graphic Designer',
-        image: 'barbara-ramos-graphic-designer.jpg',
+        image: 'img/barbara-ramos-graphic-designer.jpg',
     },
 ];
 
@@ -52,7 +52,7 @@ for(let i = 0; i < teamArrey.length; i++) {
     <div class="team-card">
         <div class="card-image">
             <img
-                src="img/${thisMember.image}"
+                src="${thisMember.image}"
                 alt="${thisMember.name}"
             />
         </div>
